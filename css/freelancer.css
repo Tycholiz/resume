@@ -197,6 +197,18 @@ section.success {
     padding-top: 75px;
   }
 }
+#skillstack .skill-container .skill-item {
+  margin: 4em auto 8em;
+  transition: all 0.2s ease-in-out;
+}
+#skillstack .skill-container .skill-item:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 765px) and (min-width: 993px) {
+  .skill-container .skill-item {
+    min-width: 80%;
+  }
+}
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
@@ -206,6 +218,7 @@ section.success {
   position: relative;
   max-width: 400px;
   margin: 0 auto;
+  border: 4px solid white;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
   background: rgba(24, 188, 156, 0.9);
@@ -290,38 +303,29 @@ section.success {
   color: #eeeeee;
 }
 @media (min-width: 768px) {
-  #experience #experience .resume-item,
-  #education #experience .resume-item,
-  #experience #education .resume-item,
-  #education #education .resume-item {
+  #experience .resume-item,
+  #education .resume-item {
     display: flex;
     flex-direction: row;
   }
-  #experience #experience .resume-item .text-md-right,
-  #education #experience .resume-item .text-md-right,
-  #experience #education .resume-item .text-md-right,
-  #education #education .resume-item .text-md-right {
+  #experience .resume-item .text-md-right,
+  #education .resume-item .text-md-right {
     text-align: right !important;
   }
-  #experience #experience .resume-item .resume-date,
-  #education #experience .resume-item .resume-date,
-  #experience #education .resume-item .resume-date,
-  #education #education .resume-item .resume-date {
+  #experience .resume-item .resume-date,
+  #education .resume-item .resume-date {
     min-width: 18rem;
     font-size: 1.2em;
   }
 }
-#experience .floating-label-form-group,
-#education .floating-label-form-group {
+.floating-label-form-group {
   position: relative;
   margin-bottom: 0;
   padding-bottom: 0.5em;
   border-bottom: 1px solid #eeeeee;
 }
-#experience .floating-label-form-group input,
-#education .floating-label-form-group input,
-#experience .floating-label-form-group textarea,
-#education .floating-label-form-group textarea {
+.floating-label-form-group input,
+.floating-label-form-group textarea {
   z-index: 1;
   position: relative;
   padding-right: 0;
@@ -333,8 +337,7 @@ section.success {
   box-shadow: none !important;
   resize: none;
 }
-#experience .floating-label-form-group label,
-#education .floating-label-form-group label {
+.floating-label-form-group label {
   display: block;
   z-index: 0;
   position: relative;
@@ -350,48 +353,38 @@ section.success {
   -ms-transition: top 0.3s ease,opacity 0.3s ease;
   transition: top 0.3s ease,opacity 0.3s ease;
 }
-#experience .floating-label-form-group:not(:first-child),
-#education .floating-label-form-group:not(:first-child) {
+.floating-label-form-group:not(:first-child) {
   padding-left: 14px;
   border-left: 1px solid #eeeeee;
 }
-#experience .floating-label-form-group-with-value label,
-#education .floating-label-form-group-with-value label {
+.floating-label-form-group-with-value label {
   top: 0;
   opacity: 1;
 }
-#experience .floating-label-form-group-with-focus label,
-#education .floating-label-form-group-with-focus label {
+.floating-label-form-group-with-focus label {
   color: #18BC9C;
 }
-#experience form .row:first-child .floating-label-form-group,
-#education form .row:first-child .floating-label-form-group {
+form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
-#experience footer,
-#education footer {
+footer {
   color: white;
 }
-#experience footer h3,
-#education footer h3 {
+footer h3 {
   margin-bottom: 30px;
 }
-#experience footer .footer-above,
-#education footer .footer-above {
+footer .footer-above {
   padding-top: 50px;
   background-color: #2C3E50;
 }
-#experience footer .footer-col,
-#education footer .footer-col {
+footer .footer-col {
   margin-bottom: 50px;
 }
-#experience footer .footer-below,
-#education footer .footer-below {
+footer .footer-below {
   padding: 25px 0;
   background-color: #233140;
 }
-#experience .btn-outline,
-#education .btn-outline {
+.btn-outline {
   color: white;
   font-size: 20px;
   border: solid 2px white;
@@ -399,154 +392,99 @@ section.success {
   transition: all 0.3s ease-in-out;
   margin-top: 15px;
 }
-#experience .btn-outline:hover,
-#education .btn-outline:hover,
-#experience .btn-outline:focus,
-#education .btn-outline:focus,
-#experience .btn-outline:active,
-#education .btn-outline:active,
-#experience .btn-outline.active,
-#education .btn-outline.active {
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
   color: #18BC9C;
   background: white;
   border: solid 2px white;
 }
-#experience .btn-primary,
-#education .btn-primary {
+.btn-primary {
   color: white;
   background-color: #2C3E50;
   border-color: #2C3E50;
   font-weight: 700;
 }
-#experience .btn-primary:hover,
-#education .btn-primary:hover,
-#experience .btn-primary:focus,
-#education .btn-primary:focus,
-#experience .btn-primary:active,
-#education .btn-primary:active,
-#experience .btn-primary.active,
-#education .btn-primary.active,
-.open .dropdown-toggle#experience .btn-primary,
-.open .dropdown-toggle#education .btn-primary {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
   color: white;
   background-color: #1a242f;
   border-color: #161f29;
 }
-#experience .btn-primary:active,
-#education .btn-primary:active,
-#experience .btn-primary.active,
-#education .btn-primary.active,
-.open .dropdown-toggle#experience .btn-primary,
-.open .dropdown-toggle#education .btn-primary {
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
   background-image: none;
 }
-#experience .btn-primary.disabled,
-#education .btn-primary.disabled,
-#experience .btn-primary[disabled],
-#education .btn-primary[disabled],
-fieldset[disabled] #experience .btn-primary,
-fieldset[disabled] #education .btn-primary,
-#experience .btn-primary.disabled:hover,
-#education .btn-primary.disabled:hover,
-#experience .btn-primary[disabled]:hover,
-#education .btn-primary[disabled]:hover,
-fieldset[disabled] #experience .btn-primary:hover,
-fieldset[disabled] #education .btn-primary:hover,
-#experience .btn-primary.disabled:focus,
-#education .btn-primary.disabled:focus,
-#experience .btn-primary[disabled]:focus,
-#education .btn-primary[disabled]:focus,
-fieldset[disabled] #experience .btn-primary:focus,
-fieldset[disabled] #education .btn-primary:focus,
-#experience .btn-primary.disabled:active,
-#education .btn-primary.disabled:active,
-#experience .btn-primary[disabled]:active,
-#education .btn-primary[disabled]:active,
-fieldset[disabled] #experience .btn-primary:active,
-fieldset[disabled] #education .btn-primary:active,
-#experience .btn-primary.disabled.active,
-#education .btn-primary.disabled.active,
-#experience .btn-primary[disabled].active,
-#education .btn-primary[disabled].active,
-fieldset[disabled] #experience .btn-primary.active,
-fieldset[disabled] #education .btn-primary.active {
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
   background-color: #2C3E50;
   border-color: #2C3E50;
 }
-#experience .btn-primary .badge,
-#education .btn-primary .badge {
+.btn-primary .badge {
   color: #2C3E50;
   background-color: white;
 }
-#experience .btn-success,
-#education .btn-success {
+.btn-success {
   color: white;
   background-color: #18BC9C;
   border-color: #18BC9C;
   font-weight: 700;
 }
-#experience .btn-success:hover,
-#education .btn-success:hover,
-#experience .btn-success:focus,
-#education .btn-success:focus,
-#experience .btn-success:active,
-#education .btn-success:active,
-#experience .btn-success.active,
-#education .btn-success.active,
-.open .dropdown-toggle#experience .btn-success,
-.open .dropdown-toggle#education .btn-success {
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
   color: white;
   background-color: #128f76;
   border-color: #11866f;
 }
-#experience .btn-success:active,
-#education .btn-success:active,
-#experience .btn-success.active,
-#education .btn-success.active,
-.open .dropdown-toggle#experience .btn-success,
-.open .dropdown-toggle#education .btn-success {
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
   background-image: none;
 }
-#experience .btn-success.disabled,
-#education .btn-success.disabled,
-#experience .btn-success[disabled],
-#education .btn-success[disabled],
-fieldset[disabled] #experience .btn-success,
-fieldset[disabled] #education .btn-success,
-#experience .btn-success.disabled:hover,
-#education .btn-success.disabled:hover,
-#experience .btn-success[disabled]:hover,
-#education .btn-success[disabled]:hover,
-fieldset[disabled] #experience .btn-success:hover,
-fieldset[disabled] #education .btn-success:hover,
-#experience .btn-success.disabled:focus,
-#education .btn-success.disabled:focus,
-#experience .btn-success[disabled]:focus,
-#education .btn-success[disabled]:focus,
-fieldset[disabled] #experience .btn-success:focus,
-fieldset[disabled] #education .btn-success:focus,
-#experience .btn-success.disabled:active,
-#education .btn-success.disabled:active,
-#experience .btn-success[disabled]:active,
-#education .btn-success[disabled]:active,
-fieldset[disabled] #experience .btn-success:active,
-fieldset[disabled] #education .btn-success:active,
-#experience .btn-success.disabled.active,
-#education .btn-success.disabled.active,
-#experience .btn-success[disabled].active,
-#education .btn-success[disabled].active,
-fieldset[disabled] #experience .btn-success.active,
-fieldset[disabled] #education .btn-success.active {
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
   background-color: #18BC9C;
   border-color: #18BC9C;
 }
-#experience .btn-success .badge,
-#education .btn-success .badge {
+.btn-success .badge {
   color: #18BC9C;
   background-color: white;
 }
-#experience .btn-social,
-#education .btn-social {
+.btn-social {
   display: inline-block;
   height: 50px;
   width: 50px;
@@ -556,16 +494,12 @@ fieldset[disabled] #education .btn-success.active {
   font-size: 20px;
   line-height: 45px;
 }
-#experience .btn:focus,
-#education .btn:focus,
-#experience .btn:active,
-#education .btn:active,
-#experience .btn.active,
-#education .btn.active {
+.btn:focus,
+.btn:active,
+.btn.active {
   outline: none;
 }
-#experience .scroll-top,
-#education .scroll-top {
+.scroll-top {
   position: fixed;
   right: 2%;
   bottom: 2%;
@@ -573,20 +507,17 @@ fieldset[disabled] #education .btn-success.active {
   height: 50px;
   z-index: 1049;
 }
-#experience .scroll-top .btn,
-#education .scroll-top .btn {
+.scroll-top .btn {
   font-size: 20px;
   width: 50px;
   height: 50px;
   border-radius: 100%;
   line-height: 28px;
 }
-#experience .scroll-top .btn:focus,
-#education .scroll-top .btn:focus {
+.scroll-top .btn:focus {
   outline: none;
 }
-#experience .portfolio-modal .modal-content,
-#education .portfolio-modal .modal-content {
+.portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
   -webkit-box-shadow: none;
@@ -596,21 +527,20 @@ fieldset[disabled] #education .btn-success.active {
   padding: 100px 0;
   text-align: center;
 }
-#experience .portfolio-modal .modal-content h2,
-#education .portfolio-modal .modal-content h2 {
+.portfolio-modal .modal-content h2 {
   margin: 0;
   font-size: 3em;
 }
-#experience .portfolio-modal .modal-content img,
-#education .portfolio-modal .modal-content img {
+.portfolio-modal .modal-content img {
   margin-bottom: 30px;
 }
-#experience .portfolio-modal .modal-content .item-details,
-#education .portfolio-modal .modal-content .item-details {
+.portfolio-modal .modal-content img:hover {
+  opacity: 0.65;
+}
+.portfolio-modal .modal-content .item-details {
   margin: 30px 0;
 }
-#experience .portfolio-modal .close-modal,
-#education .portfolio-modal .close-modal {
+.portfolio-modal .close-modal {
   position: absolute;
   width: 75px;
   height: 75px;
@@ -619,12 +549,10 @@ fieldset[disabled] #education .btn-success.active {
   right: 25px;
   cursor: pointer;
 }
-#experience .portfolio-modal .close-modal:hover,
-#education .portfolio-modal .close-modal:hover {
+.portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
-#experience .portfolio-modal .close-modal .lr,
-#education .portfolio-modal .close-modal .lr {
+.portfolio-modal .close-modal .lr {
   height: 75px;
   width: 1px;
   margin-left: 35px;
@@ -636,8 +564,7 @@ fieldset[disabled] #education .btn-success.active {
   /* Safari and Chrome */
   z-index: 1051;
 }
-#experience .portfolio-modal .close-modal .lr .rl,
-#education .portfolio-modal .close-modal .lr .rl {
+.portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
   background-color: #2C3E50;
@@ -648,16 +575,16 @@ fieldset[disabled] #education .btn-success.active {
   /* Safari and Chrome */
   z-index: 1052;
 }
-#experience .portfolio-modal .modal-backdrop,
-#education .portfolio-modal .modal-backdrop {
+.portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
 }
-#experience .mt-3,
-#education .mt-3 {
+.mt-3 {
   margin-top: 3em;
 }
-#experience .mb-3,
-#education .mb-3 {
+.mb-3 {
   margin-bottom: 3em;
+}
+#interests .interests.writeup {
+  color: #555555;
 }

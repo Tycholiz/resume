@@ -219,6 +219,26 @@ section.success {
 	}
 }
 
+#skillstack {
+	.skill-container {
+		.skill-item {
+			margin: 4em auto 8em;
+			transition: all .2s ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
+@media (max-width: 765px) and (min-width: 993px) {
+	.skill-container {
+		.skill-item {
+			min-width: 80%;
+		}
+	}
+}
+
 #portfolio {
     .portfolio-item {
         margin: 0 0 15px;
@@ -227,7 +247,8 @@ section.success {
             display: block;
             position: relative;
             max-width: 400px;
-            margin: 0 auto;
+			margin: 0 auto;
+			border: 4px solid white;
             .caption {
                 background: fade(@theme-success, 90%);
                 position: absolute;
@@ -319,6 +340,7 @@ section.success {
 
     }
   }
+}
 }
 @media (min-width: 768px) {
   #experience,
@@ -493,6 +515,9 @@ footer {
 		}
 		img {
 			margin-bottom: 30px;
+			&:hover {
+				opacity: 0.65;
+			}
 		}
 		.item-details {
 			margin: 30px 0;
@@ -544,4 +569,9 @@ footer {
 .mb-3 {
 	margin-bottom: 3em;
 }
+
+#interests {
+	.interests.writeup {
+		color: @gray;
+	}
 }
