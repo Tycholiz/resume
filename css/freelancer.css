@@ -204,6 +204,9 @@ section.success {
 #skillstack .skill-container .skill-item:hover {
   transform: scale(1.1);
 }
+#skillstack .skill-container .skill-item .skill-stack-title {
+  text-align: center;
+}
 @media (max-width: 765px) and (min-width: 993px) {
   .skill-container .skill-item {
     min-width: 80%;
