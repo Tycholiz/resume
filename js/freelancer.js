@@ -20,7 +20,7 @@
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function(){
-            $('.navbar-toggle:visible').click();
+        $('.navbar-toggle:visible').click();
     });
 
     // Offset for Main Navigation
@@ -30,16 +30,41 @@
         }
     })
 
-    // Floating label headings for the contact form
-    $(function() {
-        $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-            $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-        }).on("focus", ".floating-label-form-group", function() {
-            $(this).addClass("floating-label-form-group-with-focus");
-        }).on("blur", ".floating-label-form-group", function() {
-            $(this).removeClass("floating-label-form-group-with-focus");
-        });
+    $('.more-info').hide();
+    $('.less-info-btn').hide();
+
+    // $(".more-info.btn").click(function () {
+    //     var elem = $(".more-info-btn").text();
+    //     if (elem == "More info") {
+    //         //Stuff to do when btn is in the read more state
+    //         $(".more-info-btn").text("Less info");
+    //         $(".more-info").slideDown();
+    //     } else {
+    //         //Stuff to do when btn is in the read less state
+    //         $(".more-info-btn").text("More info");
+    //         $(".more-info").slideUp();
+    //     }
+    // });
+
+    $('.more-info-btn').click(function() {
+        // $('.more-info').show()
+        $('.more-info-btn').hide()
+        $(".more-info").slideDown(200, function() {
+            $('.less-info-btn').show()
+        })
     });
+
+    $('.less-info-btn').on('click', function() {
+        // $('.more-info').hide()
+        $('.less-info-btn').hide()
+        $(".more-info").slideUp(200, function() {
+
+            $('.more-info-btn').show()
+        })
+    });
+
+
+    // Floating label headings for the contact form
 
     $('[data-toggle="tooltip"]').tooltip();
 

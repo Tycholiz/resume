@@ -179,7 +179,7 @@ header .intro-text .skills {
   }
 }
 section {
-  padding: 100px 0;
+  padding: 70px 0;
 }
 section h2 {
   margin: 0;
@@ -198,7 +198,7 @@ section.success {
   }
 }
 #skillstack .skill-container .skill-item {
-  margin: 4em auto 8em;
+  margin: 4em auto 2em;
   transition: all 0.2s ease-in-out;
 }
 #skillstack .skill-container .skill-item:hover {
@@ -212,18 +212,43 @@ section.success {
     min-width: 80%;
   }
 }
-#portfolio .portfolio-item {
+#portfolio .row {
+  position: relative;
+  margin-bottom: 6em;
+}
+#portfolio .row .info-btn {
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 0.4em;
+  display: inline-block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+#portfolio .row .info-btn:hover {
+  cursor: pointer;
+}
+#portfolio .row .more-info-btn {
+  top: 345px;
+}
+#portfolio .row .less-info-btn {
+  top: 555px;
+}
+#portfolio .row .portfolio-item {
   margin: 0 0 15px;
   right: 0;
 }
-#portfolio .portfolio-item .portfolio-link {
+#portfolio .row .portfolio-item .portfolio-link {
   display: block;
   position: relative;
   max-width: 400px;
   margin: 0 auto;
   border: 4px solid white;
 }
-#portfolio .portfolio-item .portfolio-link .caption {
+#portfolio .row .portfolio-item .portfolio-link .caption {
   background: rgba(24, 188, 156, 0.9);
   position: absolute;
   width: 100%;
@@ -233,10 +258,10 @@ section.success {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#portfolio .row .portfolio-item .portfolio-link .caption:hover {
   opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+#portfolio .row .portfolio-item .portfolio-link .caption .caption-content {
   position: absolute;
   width: 100%;
   height: 20px;
@@ -246,14 +271,14 @@ section.success {
   margin-top: -12px;
   color: white;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+#portfolio .row .portfolio-item .portfolio-link .caption .caption-content i {
   margin-top: -12px;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+#portfolio .row .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .row .portfolio-item .portfolio-link .caption .caption-content h4 {
   margin: 0;
 }
-#portfolio * {
+* {
   z-index: 2;
 }
 @media (min-width: 767px) {
