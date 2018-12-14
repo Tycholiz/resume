@@ -257,19 +257,29 @@ section.success {
 			left: 0;
 			right: 0;
 			position: absolute;
+			width: 18%;
 			&:hover {
 				cursor: pointer;
 			}
 		}
 		.more-info-btn {
-			top: 345px;
+			top: -75px;
 		}
 		.less-info-btn {
-			top: 632px;
+			top: 2074px;
 		}
 		.portfolio-item {
 			margin: 0 0 15px;
 			right: 0;
+			.more-info {
+				height: 27em;
+				display: flex;
+				flex-direction: column;
+				p {
+					flex: 1;
+					margin-top: 1em;
+				}
+			}
 			.portfolio-link {
 				display: block;
 				position: relative;
@@ -298,7 +308,7 @@ section.success {
 						margin-top: -12px;
 						color: white;
 						i {
-							margin-top: -12px;
+							margin-top: -37px;
 						}
 						h3,
 						h4 {
@@ -316,12 +326,37 @@ section.success {
 }
 
 
-@media(min-width:767px) {
+@media(min-width:768px) {
   #portfolio {
-    .portfolio-item {
-      margin: 0 0 30px;
-    }
-  }
+	  	.row {
+			.more-info-btn {
+				top: 222px;
+			}
+			.less-info-btn {
+				top: 652px;
+			}
+			.portfolio-item {
+				margin: 0 0 30px;
+			}
+
+	  	}
+  	}
+}
+@media(min-width:1200px) {
+  #portfolio {
+	  	.row {
+			.more-info-btn {
+				top: 345px;
+			}
+			.less-info-btn {
+				top: 632px;
+			}
+			.portfolio-item {
+				margin: 0 0 30px;
+			}
+
+	  	}
+  	}
 }
 
 .project-info {
@@ -331,7 +366,7 @@ section.success {
 		text-align: left;
 		font-size: 1.6rem;
 		&-title {
-			color: @theme-success;
+			color: gray;
 			font-size: 1.2em;
 		}
 	}
