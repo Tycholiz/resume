@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2018 Start Bootstrap
+ * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
@@ -20,6 +20,7 @@ a:active,
 a.active {
   color: #18BC9C;
   outline: none;
+  border-radius: 10px;
 }
 h1,
 h2,
@@ -145,6 +146,7 @@ header .intro-text .skills {
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
   background: #18BC9C;
+  border-radius: 10px;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -207,9 +209,10 @@ section.success {
 #skillstack .skill-container .skill-item .skill-stack-title {
   text-align: center;
 }
-@media (max-width: 765px) and (min-width: 993px) {
-  .skill-container .skill-item {
-    min-width: 80%;
+@media (max-width: 767px) {
+  .skill-container {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 #portfolio .row {
@@ -227,7 +230,7 @@ section.success {
   left: 0;
   right: 0;
   position: absolute;
-  width: 18%;
+  width: 10em;
 }
 #portfolio .row .info-btn:hover {
   cursor: pointer;
@@ -454,6 +457,7 @@ footer .footer-below {
   color: #18BC9C;
   background: white;
   border: solid 2px white;
+  border-radius: 10px;
 }
 .btn-primary {
   color: white;
