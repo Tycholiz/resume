@@ -1,0 +1,128 @@
+@import '../variables';
+@import '../mixins.less';
+
+#portfolio {
+	.row {
+		position: relative;
+		margin-bottom: 6em;
+		.info-btn {
+			border: 1px solid white;
+			border-radius: 4px;
+			padding: 0.4em;
+			display: inline-block;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+			position: absolute;
+			width: 10em;
+			&:hover {
+				cursor: pointer;
+				background-image: radial-gradient(@theme-success, white);
+			}
+		}
+		.more-info-btn {
+			top: -75px;
+		}
+		.less-info-btn {
+			top: 2074px;
+		}
+		.portfolio-item {
+			margin: 0 0 15px;
+			right: 0;
+			.more-info {
+				height: 27em;
+				display: flex;
+				flex-direction: column;
+				p {
+					flex: 1;
+					margin-top: 1em;
+				}
+			}
+			.portfolio-link {
+				display: block;
+				position: relative;
+				max-width: 400px;
+				margin: 0 auto;
+				border: 4px solid white;
+				.caption {
+					background: fade(@theme-success, 90%);
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+					transition: all ease 0.5s;
+					-webkit-transition: all ease 0.5s;
+					-moz-transition: all ease 0.5s;
+					&:hover {
+						opacity: 1;
+					}
+					.caption-content {
+						position: absolute;
+						width: 100%;
+						height: 20px;
+						font-size: 20px;
+						text-align: center;
+						top: 50%;
+						margin-top: -12px;
+						color: white;
+						i {
+							margin-top: -37px;
+						}
+						h3,
+						h4 {
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.project-info {
+	display: flex;
+	justify-content: space-evenly;
+	&-column {
+		text-align: left;
+		font-size: 1.6rem;
+		&-title {
+			color: gray;
+			font-size: 1.2em;
+		}
+	}
+}
+
+@media(min-width:768px) {
+  #portfolio {
+		.row {
+		.more-info-btn {
+			top: 222px;
+		}
+		.less-info-btn {
+			top: 652px;
+		}
+		.portfolio-item {
+			margin: 0 0 30px;
+		}
+
+		}
+	}
+}
+@media(min-width:1200px) {
+  #portfolio {
+		.row {
+		.more-info-btn {
+			top: 345px;
+		}
+		.less-info-btn {
+			top: 632px;
+		}
+		.portfolio-item {
+			margin: 0 0 30px;
+		}
+
+		}
+	}
+}
