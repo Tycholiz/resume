@@ -19,9 +19,6 @@
 .resume-content__explanation a:visited {
   color: rebeccapurple;
 }
-#interests .interests-writeup {
-  color: #555555;
-}
 .interests-writeup {
   display: flex;
   justify-content: space-between;
@@ -71,6 +68,25 @@
 .avatar {
   width: 256px;
   border-radius: 50%;
+}
+.high-level-skills-container {
+  display: flex;
+}
+.high-level-skill {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: whitesmoke;
+  margin: 2em;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 6px 5px 9px 0px #5c615f;
+}
+.media-card {
+  color: #222222;
+  width: 23em;
+}
+.media-card .media-card__icon {
+  color: #18BC9C;
 }
 .navbar-custom {
   background: #2C3E50;
