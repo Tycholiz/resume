@@ -85,8 +85,12 @@
   color: #222222;
   width: 23em;
 }
-.media-card .media-card__icon {
+.media-card__icon {
   color: #18BC9C;
+  display: inline;
+}
+.media-card__header {
+  display: inline;
 }
 .navbar-custom {
   background: #2C3E50;
