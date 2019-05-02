@@ -7,6 +7,7 @@
   font-weight: bold;
   font-size: 1.1em;
   margin-left: 1em;
+  max-width: 70%;
 }
 .resume-content__explanation a {
   text-decoration: none;
@@ -17,7 +18,7 @@
   color: #cccccc;
 }
 .resume-content__explanation a:visited {
-  color: rebeccapurple;
+  color: #b17ce6;
 }
 .interests-writeup {
   display: flex;
@@ -81,13 +82,13 @@
   margin: 2em;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 6px 5px 9px 0px #5c615f;
+  box-shadow: 1px 1px 9px 0px #5c615f;
   width: 20em;
   transition: all 0.2s ease-in-out;
 }
 .high-level-skill:hover {
   transform: scale(1.1);
-  box-shadow: 12px 10px 17px 0 #6c7571;
+  box-shadow: 12px 10px 17px 0 #5c615f;
 }
 .media-card {
   color: #222222;
@@ -110,6 +111,7 @@
 }
 .media-card ul {
   text-align: initial;
+  font-size: 16px;
 }
 .navbar-custom {
   background: #2C3E50;
