@@ -80,17 +80,24 @@
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 6px 5px 9px 0px #5c615f;
+  width: 120em;
 }
 .media-card {
   color: #222222;
-  width: 23em;
 }
 .media-card__icon {
   color: #18BC9C;
   display: inline;
+  font-size: 2em;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 .media-card__header {
   display: inline;
+}
+.media-card ul {
+  text-align: initial;
 }
 .navbar-custom {
   background: #2C3E50;
