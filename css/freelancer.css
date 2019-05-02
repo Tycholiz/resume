@@ -71,6 +71,8 @@
 }
 .high-level-skills-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .high-level-skill {
   display: flex;
@@ -80,20 +82,25 @@
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 6px 5px 9px 0px #5c615f;
-  width: 120em;
+  width: 20em;
 }
 .media-card {
   color: #222222;
+  width: inherit;
+  margin: 1em;
 }
-.media-card__icon {
+.media-card__header {
+  margin: 0 auto;
+}
+.media-card__header i {
   color: #18BC9C;
-  display: inline;
+  display: inline-block;
   font-size: 2em;
   margin-top: 0.5em;
   margin-right: 0.5em;
   margin-left: 0.5em;
 }
-.media-card__header {
+.media-card__header h5 {
   display: inline;
 }
 .media-card ul {

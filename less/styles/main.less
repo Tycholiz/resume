@@ -64,6 +64,8 @@
 
 .high-level-skills-container {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .high-level-skill {
@@ -74,25 +76,31 @@
 	border-radius: 15px;
 	overflow: hidden;
 	box-shadow: 6px 5px 9px 0px #5c615f;
-	width: 120em;
+	width: 20em;
 }
 
 .media-card {
 	color: @gray-darker;
-	// width: 23em;
-
-	&__icon {
-		color: @theme-success;
-		display: inline;
-		font-size: 2em;
-		margin-top: 0.5em;
-		margin-right: 0.5em;
-		margin-left: 0.5em;
-	}
+	width: inherit;
+	margin: 1em;
 
 	&__header {
-		display: inline;
+		margin: 0 auto;
+
+		i {
+			color: @theme-success;
+			display: inline-block;
+			font-size: 2em;
+			margin-top: 0.5em;
+			margin-right: 0.5em;
+			margin-left: 0.5em;
+		}
+
+		h5 {
+			display: inline;
+		}
 	}
+
 
 	ul {
 		text-align: initial;
