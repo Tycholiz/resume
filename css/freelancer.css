@@ -19,8 +19,12 @@
 .resume-content__explanation a:visited {
   color: rebeccapurple;
 }
-#interests .interests.writeup {
+#interests .interests-writeup {
   color: #555555;
+}
+.interests-writeup {
+  display: flex;
+  justify-content: space-between;
 }
 .intro-text .name {
   display: block;
