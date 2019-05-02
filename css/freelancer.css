@@ -83,6 +83,11 @@
   overflow: hidden;
   box-shadow: 6px 5px 9px 0px #5c615f;
   width: 20em;
+  transition: all 0.2s ease-in-out;
+}
+.high-level-skill:hover {
+  transform: scale(1.1);
+  box-shadow: 12px 10px 17px 0 #6c7571;
 }
 .media-card {
   color: #222222;
