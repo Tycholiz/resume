@@ -20,12 +20,6 @@
 .resume-content__explanation a:visited {
   color: #b17ce6;
 }
-.education-more-info {
-  color: #3f719d;
-}
-.education-more-info:hover {
-  color: whitesmoke;
-}
 .interests-writeup {
   display: flex;
   justify-content: space-between;
@@ -94,7 +88,7 @@
   transition: all 0.2s ease-in-out;
 }
 .high-level-skill:hover {
-  transform: scale(1.025);
+  transform: scale(1.1);
   box-shadow: 12px 10px 17px 0 #5c615f;
 }
 .media-card {
